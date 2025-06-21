@@ -3,7 +3,7 @@ import os
 
 def run_dddd(domain):
     try:
-        command = f'./dddd -t {domain} {domain}.html'
+        command = f'./dddd -t {domain} -ho {domain}.html'
         subprocess.run(command, shell=True, check=True)
         print("run_dddd 扫描任务执行成功")
     except subprocess.CalledProcessError as e:
