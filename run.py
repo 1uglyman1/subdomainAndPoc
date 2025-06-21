@@ -17,5 +17,4 @@ if __name__ == '__main__':
     with open('url.txt','r') as file:
         for f in file:
             run_dddd(f.strip())
-        file.close()
     print("+++++++++++++ run over +++++++++++++")
